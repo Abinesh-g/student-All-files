@@ -1,0 +1,74 @@
+<p>
+  subject works!
+</p>
+<h1 style="text-align:center">INSERT SUBJECT</h1>
+
+
+	SELECT REGULATION:
+	
+		<select style="text-align:center" [(ngModel)]= "user.REGULATION">
+			<option value="r13">2013</option>
+			<option value="r17">2017</option>
+		</select>
+	
+<br>
+	SELECT DEPARTMENT:
+	<select style="text-align:center" [(ngModel)]= "user.DEPARTMENT">
+			<option value="it">IT</option>
+			<option value="cse">CSE</option>
+			<option value="ece">ECE</option>
+			<option value="eee">EEE</option>
+			<option value="mech">MECH</option>
+			<option value="chem">CHEM</option>
+			<option value="mca">MCA</option>
+	</select>
+	
+<br>
+	SELECT SEMESTER:
+	<select style="text-align:center" [(ngModel)]= "user.SEMESTER">
+			<option value="sem1">1</option>
+			<option value="sem2">2</option>
+			<option value="sem3">3</option>
+			<option value="sem4">4</option>
+			<option value="sem5">5</option>
+			<option value="sem6">6</option>
+			<option value="sem7">7</option>
+			<option value="sem8">8</option>	
+	</select>
+	
+<br><br>
+
+<br>
+<h1>Enter Subject Name</h1><br>
+
+
+        1.
+    
+        <input type="text"   [(ngModel)]= "user.SUB1" >
+   
+<br>
+        2.
+    
+        <input type="text"  [(ngModel)]= "user.SUB2" >
+    
+<br>
+        3.
+        <input type="text"  [(ngModel)]= "user.SUB3"  >
+   
+<br>
+        4.
+        <input type="text"  [(ngModel)]= "user.SUB4"  >
+    
+<br>
+        5.
+        <input type="text"  [(ngModel)]= "user.SUB5"  >
+    
+<br>
+        6.
+        <input type="text"  [(ngModel)]= "user.SUB6" >
+<br>
+
+{{user.SEMESTER}}
+{{user.REGULATION}}
+{{user.DEPARTMENT}}
+<button (click)="onSubmit()"> click </button>
