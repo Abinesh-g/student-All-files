@@ -1,0 +1,69 @@
+<div class="row">
+		<div class="col-sm-3"></div>
+		<div class="col-sm-6">
+<h1 style="text-align:center">INSERT MARK</h1><br>
+
+
+	SELECT REGULATION:
+	
+		<select class="form-control" style="text-align:center" [(ngModel)]= "mark.REGULATION">
+			<option value="r13">2013</option>
+			<option value="r17">2017</option>
+		</select>
+	
+<br>
+	SELECT DEPARTMENT:
+	<select class="form-control" style="text-align:center" [(ngModel)]= "mark.DEPARTMENT">
+			<option value="it">IT</option>
+			<option value="cse">CSE</option>
+			<option value="ece">ECE</option>
+			<option value="eee">EEE</option>
+			<option value="mech">MECH</option>
+			<option value="chem">CHEM</option>
+			<option value="mca">MCA</option>
+	</select>
+	
+<br>
+	SELECT SEMESTER:
+	<select class="form-control" style="text-align:center" [(ngModel)]= "mark.SEMESTER">
+			<option value="sem1">1</option>
+			<option value="sem2">2</option>
+			<option value="sem3">3</option>
+			<option value="sem4">4</option>
+			<option value="sem5">5</option>
+			<option value="sem6">6</option>
+			<option value="sem7">7</option>
+			<option value="sem8">8</option>	
+	</select>
+	
+<br><br>
+	<!-- {{mark.REGULATION}}
+	{{mark.DEPARTMENT}}
+	{{mark.SEMESTER}} -->
+<button class="btn btn-dark" style="background-color: darkslategray;color:white;" (click)="insertMarks()"> SUBMIT </button>
+
+
+ <div class="container" *ngFor="let c of allChats">
+ 	<!-- {{mark.REGULATION}}
+	{{mark.DEPARTMENT}}
+	{{mark.SEMESTER}} -->
+            <h2>SUBJECTS</h2>      
+            <h3>
+
+            	REGISTER NUMBER:<input type="text" class="form-control" name="REGISTER_NUMBER" [(ngModel)]= "mark.REGISTER_NUMBER"><br>
+            	SUBJECT NAME   								MARK: <br>
+{{c.SUB1}} <input class="form-control" type="text" [(ngModel)]= "mark.MARK1"><br>
+{{c.SUB2}} <input class="form-control" type="text"[(ngModel)]= "mark.MARK2"><br>
+{{c.SUB3}} <input class="form-control" type="text"[(ngModel)]= "mark.MARK3"><br>
+{{c.SUB4}}<input class="form-control" type="text"[(ngModel)]= "mark.MARK4"><br>
+{{c.SUB5}} <input class="form-control" type="text"[(ngModel)]= "mark.MARK5"><br>
+{{c.SUB6}} <input class="form-control" type="text"[(ngModel)]= "mark.MARK6"><br>
+                <div class="container">
+               <button class="btn btn-dark" style="background-color: darkslategray;color:white;"(click)="doUpdate()">INSERT</button>
+           </div>
+            </h3>
+</div>
+
+</div>
+<div class="col-sm-3"></div>
+</div>

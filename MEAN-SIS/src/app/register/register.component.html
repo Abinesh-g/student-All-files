@@ -1,0 +1,23 @@
+
+    <h1 style="text-align:center">Register</h1>
+Name: <input type="text" [(ngModel)]="user.userName"><br>
+Password: <input type="Password" [(ngModel)]="user.password"><br>
+
+<button (click)="onSubmit()"> insert </button><br><br>
+
+<button (click)="getByNames()"> get </button>
+<button (click)="updateByNames()"> update </button>
+
+ <div class="container" *ngFor="let c of allChats">
+            <h3>
+
+                {{c.NAME}}
+                
+            </h3>
+         <h2>  ngfor</h2>
+            <br>
+</div>
+
+
+<!-- {{user.userName}}
+{{user.password}} -->

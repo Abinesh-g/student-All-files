@@ -1,0 +1,57 @@
+<p>
+  sortlist works!
+</p>
+
+<h1>STUDENT INFORMATION</h1><br>
+
+        Starting Reg.no:<input type="text" class="form-control" name="REGISTER_NUMBER1" [(ngModel)]="user.REGISTER_NUMBER1" >
+        Ending Reg.no:<input type="text" class="form-control" name="REGISTER_NUMBER2" [(ngModel)]="user.REGISTER_NUMBER2" >
+10th Mark:<input type="text" class="form-control" name="TENTH_MARK" [(ngModel)]="user.TENTH_MARK">
+12th Mark:<input type="text" class="form-control" name="TWELTH_MARK" [(ngModel)]="user.TWELTH_MARK">
+CGPA:<input type="text" class="form-control" name="CGPA" [(ngModel)]="user.CGPA">
+
+
+{{user.REGISTER_NUMBER1}}
+{{user.REGISTER_NUMBER2}}
+{{user.TENTH_MARK}}
+{{user.TWELTH_MARK}}
+{{user.CGPA}}
+<button (click)="onSort()"> click </button>
+
+
+
+
+ <div class="container" *ngFor="let c of allChats">
+            <h1>ALL DETAILS</h1>
+            <h3>
+
+
+                <!-- ENTERED DETAILS -->
+
+                {{user.REGISTER_NUMBER1}}
+                {{user.REGISTER_NUMBER2}}
+                {{user.TENTH_MARK}}
+                {{user.TWELTH_MARK}}
+                {{user.CGPA}}
+
+            <!-- </div> -->
+            </h3>
+            
+
+            <div  *ngIf="">
+            	
+                <!-- DATABASE DETAILS -->
+
+                {{c.NAME}}
+                {{c.REGISTER_NUMBER}}
+                {{c.TENTH_MARK}}
+                {{c.TENTH_PERCENTAGE}}
+                {{c.TWELTH_MARK}}
+                {{c.TWELTH_PERCENTAGE}}
+                {{c.LAST_SEMESTER_CGPA}}
+
+            </div>
+
+        
+            <br>
+</div>

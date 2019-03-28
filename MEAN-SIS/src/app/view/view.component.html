@@ -1,0 +1,66 @@
+
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+							<h1 style="text-align:center">VIEW</h1>
+					REGISTER NUMBER: <input class="form-control" type="text" [(ngModel)]="user.REGISTER_NUMBER"><br>
+					<button class="btn btn-dark" style="background-color: darkslategray;color:white;" (click)="getByNames()"> GET DETAILS </button> &nbsp;
+					<button class="btn btn-dark" style="background-color: darkslategray;color:white;" (click)="getMarks()"> GET MARKS </button>
+
+				
+					<div  *ngFor="let mark of allMarks">
+					<h3>REGISTER NUMBER&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{mark.REGISTER_NUMBER}}</h3><br>
+						<h2 style="color: blue;" >SUBJECT &nbsp;&nbsp;&nbsp;&nbsp; MARKS</h2>
+						<h3>{{mark.SUB1}}&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp; {{mark.MARK1}}</h3><br>
+						<h3>{{mark.SUB2}}&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp; {{mark.MARK2}}</h3><br>
+						<h3>{{mark.SUB3}}&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp; {{mark.MARK3}}</h3><br>
+						<h3>{{mark.SUB4}}&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp; {{mark.MARK4}}</h3><br>
+						<h3>{{mark.SUB5}}&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp; {{mark.MARK5}}</h3><br>
+						<h3>{{mark.SUB6}}&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp; {{mark.MARK6}}</h3><br>
+					</div>
+				
+				</div>
+			
+					<div  *ngFor="let c of allChats">
+								<h1 style="color: blue;"> STUDENT DETAILS</h1><br>
+								<h3>NAME&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp; {{c.NAME}}</h3><br>
+								<h3>REGISTER NUMBER&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.REGISTER_NUMBER}}</h3><br>
+								<h3>D.O.B&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.DOB}}</h3><br>
+								<h3>GENDER&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.GENDER}}</h3><br>
+								<h3>BLOOD GROUP&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.BLOOD_GROUP}}</h3><br>							
+								<h3>AADHAR CARD NUMBER&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.AADHAR_CARD_NUMBER}}</h3><br>
+							    <h3>BANK ACCOUNT NUMBER&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.BANK_ACCOUNT_NUMBER}}</h3><br>
+						        <h3>STUDENT CONTACT NUMBER&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.STUDENT_CONTACT_NUMBER}}</h3><br>
+							    <h3>POSTAL ACCOUNT NUMBER&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.POSTAL_ACCOUNT_NUMBER}}</h3><br>
+							    <h3>RELIGION&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.RELIGION}}</h3><<br>							
+							    <h3>CASTE&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.CASTE}}</h3><br>							
+								<h3>PLACE OF ARRIVAL&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.PLACE_OF_ARRIVAL}}</h3><br>							
+							    <h3>TRAVEL MODE&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.TRAVEL_MODE}}</h3><br>							
+					            <h3>NUMBER OF SIBLINGS&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.NUMBER_OF_SIBLINGS}}</h3><br>
+							   <h3>FATHER NAME&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.FATHER_NAME}}</h3><br>
+							   <h3>MOTHER NAME&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.MOTHER_NAME}}</h3><br>
+							   <h3>FATHER OCCUPATION&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.FATHER_OCCUPATION}}</h3><br>   
+							   <h3>MOTHER OCCUPATION&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.MOTHER_OCCUPATION}}</h3><br>
+						       <h3>ANNUAL INCOME&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.ANNUAL_INCOME}}</h3><br>
+							   <h3>PARENT EMAIL ID&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.PARENT_EMAIL_ID}}</h3><br>
+							   <h3>ADDRESS&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.ADDRESS}}</h3><br>   
+							   <h3>PARENT CONTACT NUMBER&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.PARENT_CONTACT_NUMBER}}</h3><br> 
+							   <h3>SCHOOL NAME&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.SCHOOL_NAME}}</h3><br>
+							   <h3>TENTH MARK&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.TENTH_MARK}}</h3><br>
+								<h3>TENTH PERCENTAGE&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.TENTH_PERCENTAGE}}</h3><br>
+								<h3>TENTH BOARD&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.TENTH_BOARD}}</h3><br>
+								<h3>TWELTH MARK&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.TWELTH_MARK}}</h3><br>
+								<h3>TWELTH PERCENTAGE&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.TWELTH_PERCENTAGE}}</h3><br>
+								<h3>TWELTH BOARD&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.TWELTH_BOARD}}</h3><br>							
+						        <h3>CUT OF MARK&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.CUT_OF_MARK}}</h3><br>
+								<h3>DATE_OF_ADMISSION&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.DATE_OF_ADMISSION}}</h3><br>
+								<h3>FIRSTGRADUATE&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.FIRSTGRADUATE}}</h3><br>
+								<h3>QUOTA&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.QUOTA}}</h3><br>
+								<h3>SCHOLARSHIP&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.SCHOLARSHIP}}</h3><br>
+								<h3>LAST SEMESTER CGPA&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{c.LAST_SEMESTER_CGPA}}</h3><br>
+							
+				</div>
+
+
+<!-- {{user.userName}}
+{{user.password}} -->
